@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MILO ECU BANK — بانک اطلاعات فنی واحدهای کنترل الکترونیکی خودرو">
+<title>MILO ECU BANK</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#121a2d;--line:#26334c;--text:#edf3ff;--muted:#9eacc4;--blue:#69a7ff;--cyan:#54d6d0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#182b4a 0,transparent 35%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.8}
+.wrap{max-width:1100px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-size:1.35rem;font-weight:850;letter-spacing:.04em}.brand span{color:var(--cyan)}.tag{color:var(--muted);font-size:.88rem}.hero{padding:48px 0 28px}.hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.25;margin:0 0 14px}.hero p{color:var(--muted);max-width:720px;margin:0 0 22px}.search{display:flex;gap:10px;max-width:680px}.search input{flex:1;min-width:0;background:#0e1729;border:1px solid var(--line);border-radius:12px;padding:14px;color:var(--text);font:inherit}.search button,.chip{border:0;border-radius:12px;background:linear-gradient(135deg,#397fe0,#2863b8);color:white;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer}.section-title{display:flex;align-items:center;justify-content:space-between;margin:28px 0 14px}.section-title h2{font-size:1.3rem;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{background:linear-gradient(160deg,#16223a,#101829);border:1px solid var(--line);border-radius:16px;padding:18px}.card h3{margin:0 0 6px}.card p{color:var(--muted);margin:0;font-size:.94rem}.icon{font-size:1.6rem;margin-bottom:8px}.record{margin-top:16px;border:1px solid #31517b;background:#111d31;border-radius:16px;padding:20px}.record-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}.status{font-size:.78rem;border:1px solid #8a743c;color:#f2d58b;border-radius:99px;padding:3px 10px}.record ul{padding-right:22px;color:var(--muted)}.note{font-size:.9rem;color:#f2d58b;background:#302817;border:1px solid #66502b;border-radius:12px;padding:12px;margin-top:12px}.footer{border-top:1px solid var(--line);margin-top:36px;padding:18px 0;color:var(--muted);font-size:.85rem}
+a{color:var(--blue)}.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div><div class="brand">MILO <span>ECU BANK</span></div><div class="tag">بانک اطلاعات فنی ECU خودرو، موتورسیکلت و ماشین‌آلات</div></div><div class="tag">نسخه آزمایشی · رایگان</div></header>
+<main>
+<section class="hero">
+<h1>مرجع فنی واحدهای کنترل الکترونیکی</h1>
+<p>جست‌وجو و دسته‌بندی خانواده‌های ECU، مشاهده پرونده‌های فنی، سوکت‌ها، قطعات برد و راهنمای عیب‌یابی. اطلاعات هر پرونده با وضعیت اعتبار و محدوده کاربرد نمایش داده می‌شود.</p>
+<div class="search"><input id="q" type="search" placeholder="جست‌وجو: Bosch، EDC16، شماره فنی..." aria-label="جست‌وجو"><button onclick="searchRecords()">جست‌وجو</button></div>
+</section>
+<div class="section-title"><h2>دسته‌بندی‌ها</h2><span class="tag">بانک چندسازنده‌ای</span></div>
+<section class="grid" aria-label="دسته‌بندی‌ها">
+<div class="card"><div class="icon">🚗</div><h3>خودروهای سواری</h3><p>بنزینی و دیزلی؛ خانواده‌ها و سازندگان مختلف</p></div>
+<div class="card"><div class="icon">🏍️</div><h3>موتورسیکلت</h3><p>سامانه‌های مدیریت موتور و کنترل الکترونیکی</p></div>
+<div class="card"><div class="icon">🚛</div><h3>کامیون و اتوبوس</h3><p>ECU موتور و سامانه‌های جانبی خودروهای سنگین</p></div>
+<div class="card"><div class="icon">🚜</div><h3>ماشین‌آلات</h3><p>کشاورزی، راه‌سازی و تجهیزات صنعتی</p></div>
+</section>
+<div class="section-title"><h2>سازندگان ECU</h2></div>
+<section class="grid">
+<div class="card"><h3>Bosch</h3><p>EDC، ME، MED و خانواده‌های دیگر</p></div>
+<div class="card"><h3>Continental / Siemens VDO</h3><p>خانواده‌های کنترل موتور و بدنه</p></div>
+<div class="card"><h3>Delphi</h3><p>سامانه‌های مدیریت موتور</p></div>
+<div class="card"><h3>Denso و Marelli</h3><p>پرونده‌ها بر اساس شماره فنی مشخص</p></div>
+</section>
+<div class="section-title"><h2>پرونده نمونه</h2><span class="tag">شماره ۰۰۱</span></div>
+<section class="record" id="edc">
+<div class="record-head"><div><h2 style="margin:0">Bosch EDC16C39</h2><div class="tag">پرونده آموزشی خانواده ECU دیزل</div></div><span class="status">نیازمند تطبیق شماره فنی</span></div>
+<ul>
+<li>شناسه خانواده: Bosch EDC16C39</li>
+<li>پردازنده: خانواده MPC561/2 در برخی مستندات این خانواده گزارش شده؛ پسوند دقیق باید با برد تطبیق داده شود.</li>
+<li>سوکت‌ها و پین‌آوت: فقط پس از تطبیق شماره قطعه Bosch و نسخه سخت‌افزاری قابل تأیید هستند.</li>
+<li>قطعات حافظه، رگولاتورها و درایورها: تا زمان مشاهده مارکینگ قطعات و سند همان برد، قطعی اعلام نمی‌شوند.</li>
+</ul>
+<div class="note">هشدار فنی: این صفحه دستور اتصال برق یا پروگرام نیست. پین‌آوت و ولتاژها را بدون سند مربوط به همان شماره فنی به کار نبرید.</div>
+</section>
+</main>
+<footer class="footer">© MILO ECU BANK · نسخه آزمایشی استاتیک · اطلاعات فنی باید پیش از استفاده عملی با مستندات سازنده تطبیق داده شوند.</footer>
+</div>
+<script>
+function searchRecords(){const q=document.getElementById('q').value.trim().toLowerCase();const r=document.getElementById('edc');if(!q){r.classList.remove('hidden');return;}const found=('bosch edc16c39 mpc561 mpc562').includes(q)||q.split(/\s+/).some(x=>('bosch edc16c39 mpc561 mpc562').includes(x));r.classList.toggle('hidden',!found);if(!found)alert('برای این عبارت هنوز پرونده‌ای در نسخه آزمایشی ثبت نشده است.');else r.scrollIntoView({behavior:'smooth',block:'center'});}
+document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')searchRecords()});
+</script>
+</body>
+</html>
